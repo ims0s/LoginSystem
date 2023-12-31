@@ -1,0 +1,51 @@
+:root{
+    --background:#24353F;
+    --color: #17A2B8;
+    --input-border:#ced4da;
+    --input-border-focus:#80bdff;
+    --input-border-invalid:#f00;
+    --input-border-valid:#0f0;
+}
+body{
+    background-color: var(--background);
+    color: var(--color);
+}
+.shadow-dark{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);;
+}
+.input-default , .input-invalid , .input-valid {
+    background-color: var(--background) !important;
+    color: #fff !important;
+    border: 1px solid var(--input-border) !important;
+}
+.input-default:focus{
+border:1px solid var(--input-border-focus) !important;
+box-shadow: none !important;
+}
+.input-invalid:focus{
+    border:1px solid var(--input-border-invalid) !important;
+}
+.input-valid:focus{
+    border:1px solid var(--input-border-valid) !important;
+}
+
+input::placeholder{
+    color: var(--input-border) !important;
+}
+
+.btn-outline-ocean{
+    border: 1px solid var(--color) !important;
+    color: var(--color) !important;
+    background-color: transparent;
+}
+.btn-outline-ocean:hover {
+    border: 1px solid var(--color) !important;
+    color: #fff !important;
+    background-color: var(--color) !important;
+}
+a:hover{
+    text-decoration: underline !important;
+}
+nav{
+    background-color: transparent !important;
+}
